@@ -1,19 +1,30 @@
 import React, { Component } from 'react'
-import logo from '../../../assets/logo.svg'
 import './style.css'
+
+import Window from '../../components/Photon/Window'
+import WindowContent from '../../components/Photon/WindowContent'
+
+import PaneGroup from '../../components/Photon/PaneGroup'
+import Pane from '../../components/Photon/Pane'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <Window>
+        <WindowContent>
+          <PaneGroup>
+            <Pane>
+              pane1
+            </Pane>
+            <Pane>
+              pane2
+            </Pane>
+            <Pane>
+              pane3
+            </Pane>
+          </PaneGroup>
+        </WindowContent>
+      </Window>
     )
   }
 }

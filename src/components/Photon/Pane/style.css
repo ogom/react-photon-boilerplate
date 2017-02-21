@@ -1,0 +1,6 @@
+.pane-mini,
+.pane-sm,
+.pane {
+  height: 100%;
+  width: 100%;
+}
