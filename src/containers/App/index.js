@@ -10,6 +10,10 @@ import Pane from '../../components/Photon/Pane'
 import NavGroup from '../../components/Photon/NavGroup'
 import NavGroupTitle  from '../../components/Photon/NavGroupTitle'
 import NavGroupItem  from '../../components/Photon/NavGroupItem'
+import ListGroup from '../../components/Photon/ListGroup'
+import ListGroupHeader from '../../components/Photon/ListGroupHeader'
+import ListGroupItem from '../../components/Photon/ListGroupItem'
+import Input from '../../components/Photon/Input'
 
 class App extends Component {
   render() {
@@ -28,10 +32,23 @@ class App extends Component {
               </NavGroup>
             </Pane>
             <Pane>
-              pane2
+              <ListGroup>
+                <ListGroupHeader>
+                  <Input type="text" placeholder="Search for someone" />
+                </ListGroupHeader>
+                <ListGroupItem>
+                  Item01
+                </ListGroupItem>
+                <ListGroupItem>
+                  Item02
+                </ListGroupItem>
+                <ListGroupItem>
+                  Item03
+                </ListGroupItem>
+              </ListGroup>
             </Pane>
             <Pane>
-              pane3
+              Pane01
             </Pane>
           </PaneGroup>
         </WindowContent>
