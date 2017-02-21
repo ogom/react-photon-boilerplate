@@ -14,6 +14,7 @@ import ListGroup from '../../components/Photon/ListGroup'
 import ListGroupHeader from '../../components/Photon/ListGroupHeader'
 import ListGroupItem from '../../components/Photon/ListGroupItem'
 import Input from '../../components/Photon/Input'
+import SplitPane from 'react-split-pane'
 
 class App extends Component {
   render() {
@@ -23,33 +24,37 @@ class App extends Component {
 
         <WindowContent>
           <PaneGroup>
-            <Pane className="pane-sm sidebar">
-              <NavGroup>
-                <NavGroupTitle title="Favorites"/>
-                <NavGroupItem item="Home" icon="home"/>
-                <NavGroupItem item="Downloads" icon="download"/>
-                <NavGroupItem item="Documents" icon="folder"/>
-              </NavGroup>
-            </Pane>
-            <Pane>
-              <ListGroup>
-                <ListGroupHeader>
-                  <Input type="text" placeholder="Search for someone" />
-                </ListGroupHeader>
-                <ListGroupItem>
-                  Item01
-                </ListGroupItem>
-                <ListGroupItem>
-                  Item02
-                </ListGroupItem>
-                <ListGroupItem>
-                  Item03
-                </ListGroupItem>
-              </ListGroup>
-            </Pane>
-            <Pane>
-              Pane01
-            </Pane>
+            <SplitPane defaultSize={160}>
+              <Pane className="pane sidebar">
+                <NavGroup>
+                  <NavGroupTitle title="Favorites"/>
+                  <NavGroupItem item="Home" icon="home"/>
+                  <NavGroupItem item="Downloads" icon="download"/>
+                  <NavGroupItem item="Documents" icon="folder"/>
+                </NavGroup>
+              </Pane>
+              <SplitPane defaultSize={200}>
+                <Pane>
+                  <ListGroup>
+                    <ListGroupHeader>
+                      <Input type="text" placeholder="Search for someone" />
+                    </ListGroupHeader>
+                    <ListGroupItem>
+                      Item01
+                    </ListGroupItem>
+                    <ListGroupItem>
+                      Item02
+                    </ListGroupItem>
+                    <ListGroupItem>
+                      Item03
+                    </ListGroupItem>
+                  </ListGroup>
+                </Pane>
+                <Pane>
+                  Pane01
+                </Pane>
+              </SplitPane>
+            </SplitPane>
           </PaneGroup>
         </WindowContent>
 
