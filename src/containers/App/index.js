@@ -7,6 +7,9 @@ import ToolbarHeader from '../../components/Photon/ToolbarHeader'
 import ToolbarFooter from '../../components/Photon/ToolbarFooter'
 import PaneGroup from '../../components/Photon/PaneGroup'
 import Pane from '../../components/Photon/Pane'
+import NavGroup from '../../components/Photon/NavGroup'
+import NavGroupTitle  from '../../components/Photon/NavGroupTitle'
+import NavGroupItem  from '../../components/Photon/NavGroupItem'
 
 class App extends Component {
   render() {
@@ -16,8 +19,13 @@ class App extends Component {
 
         <WindowContent>
           <PaneGroup>
-            <Pane>
-              pane1
+            <Pane className="pane-sm sidebar">
+              <NavGroup>
+                <NavGroupTitle title="Favorites"/>
+                <NavGroupItem item="Home" icon="home"/>
+                <NavGroupItem item="Downloads" icon="download"/>
+                <NavGroupItem item="Documents" icon="folder"/>
+              </NavGroup>
             </Pane>
             <Pane>
               pane2
