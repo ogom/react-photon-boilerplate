@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import './style.css'
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 
 import Window from '../../components/Photon/Window'
 import WindowContent from '../../components/Photon/WindowContent'
-import ToolbarHeader from '../../components/Photon/ToolbarHeader'
-import ToolbarFooter from '../../components/Photon/ToolbarFooter'
 import PaneGroup from '../../components/Photon/PaneGroup'
 import Pane from '../../components/Photon/Pane'
 import NavGroup from '../../components/Photon/NavGroup'
@@ -20,8 +20,7 @@ class App extends Component {
   render() {
     return (
       <Window>
-        <ToolbarHeader title="Header"/>
-
+        <Header/>
         <WindowContent>
           <PaneGroup>
             <SplitPane defaultSize={160}>
@@ -57,8 +56,7 @@ class App extends Component {
             </SplitPane>
           </PaneGroup>
         </WindowContent>
-
-        <ToolbarFooter title="Footer"/>
+        <Footer/>
       </Window>
     )
   }
