@@ -2,7 +2,7 @@
 
 A boilerplate of resizable photon on react.
 
-[![https://gyazo.com/ccec64d206c4bae85d19e9d563dea178](https://i.gyazo.com/ccec64d206c4bae85d19e9d563dea178.gif)](https://gyazo.com/ccec64d206c4bae85d19e9d563dea178)
+[![https://gyazo.com/8814711566298c21f5f474333c8d49f6](https://i.gyazo.com/8814711566298c21f5f474333c8d49f6.gif)](https://gyazo.com/8814711566298c21f5f474333c8d49f6)
 
 ## Contains
 

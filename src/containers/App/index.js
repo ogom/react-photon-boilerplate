@@ -17,11 +17,11 @@ class App extends Component {
         <Header/>
         <WindowContent>
           <PaneGroup>
-            <SplitPane defaultSize={160}>
+            <SplitPane defaultSize={140}>
               <Pane className="pane sidebar">
                 <Nav/>
               </Pane>
-              <SplitPane defaultSize={200}>
+              <SplitPane defaultSize={180}>
                 <Pane>
                   <Aside/>
                 </Pane>
