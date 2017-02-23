@@ -1,21 +1,20 @@
 import React, { Component } from 'react'
 import classNames from 'classnames'
-import './style.css'
 
-class Pane extends Component {
+class Table extends Component {
   render() {
     const className = classNames(this.props.className)
 
     return (
-      <div className={className}>
+      <table className={className}>
         {this.props.children}
-      </div>
+      </table>
     )
   }
 }
 
-Pane.defaultProps = {
-  className: 'pane'
+Table.defaultProps = {
+  className: 'table-striped'
 }
 
-export default Pane
+export default Table
