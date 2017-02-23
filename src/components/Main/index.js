@@ -11,38 +11,22 @@ class Main extends Component {
       {name: 'photon.css', kind: 'CSS', size: '28K'}
     ]
 
+    const ths = ['Name', 'Kind', 'File Size'].map((row) => (<th>{row}</th>))
+    const tds = data.map((row) => {
+      return (
+        <tr>
+          <td>{row.name}</td>
+          <td>{row.kind}</td>
+          <td>{row.size}</td>
+        </tr>
+      )
+    })
+
     return (
       <div className="main">
         <Table>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Kind</th>
-              <th>File Size</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>photon.css</td>
-              <td>CSS</td>
-              <td>28K</td>
-            </tr>
-            <tr>
-              <td>photon.css</td>
-              <td>CSS</td>
-              <td>28K</td>
-            </tr>
-            <tr>
-              <td>photon.css</td>
-              <td>CSS</td>
-              <td>28K</td>
-            </tr>
-            <tr>
-              <td>photon.css</td>
-              <td>CSS</td>
-              <td>28K</td>
-            </tr>
-          </tbody>
+          <thead><tr>{ths}</tr></thead>
+          <tbody>{tds}</tbody>
         </Table>
       </div>
     )
