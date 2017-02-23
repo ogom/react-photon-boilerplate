@@ -2,6 +2,8 @@
 
 A boilerplate of resizable photon on react.
 
+[![https://gyazo.com/ccec64d206c4bae85d19e9d563dea178](https://i.gyazo.com/ccec64d206c4bae85d19e9d563dea178.gif)](https://gyazo.com/ccec64d206c4bae85d19e9d563dea178)
+
 ## Contains
 
 - [x] [React](https://facebook.github.io/react/)
